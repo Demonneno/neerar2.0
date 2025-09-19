@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="profile-name">
+  <br>
+  <p>Neerar Albert - Facilities Engineer</p>
+  <p>
+    <a href="https://www.linkedin.com/in/neerar-albert">
+      <img src="{{ url_for('static', filename='img/linkedin.svg') }}" alt="LinkedIn" class="social-logo">
+    </a>
+    <a href="https://github.com/Demonneno">
+      <img src="{{ url_for('static', filename='img/github.svg') }}" alt="GitHub" class="social-logo">
+    </a>
+  </p>
+  <br>
+</div>
+
+<div class="main-section">
+  <div class="body-container">
+    <div class="body-photo">
+      <img src="{{ url_for('static', filename='img/me3.svg') }}" alt="Profile Photo" class="profile-photo">
+    </div>
+    <div class="body-content">
+<p>My background as a Facility Engineer has given me 10 years of experience in entertainment technology, sharpening my skills in troubleshooting, system installations, and debugging.<br><br>My drive to build great user experiences led me to explore software, and I've since completed Harvard's CS50x.<br><br>While I'm new to Python, I'm confident that my problem-solving skills and hands-on technical abilities are a great fit for a team that values a fresh perspective.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cli-section" id="cli">
+  <div class="cli-header">
+    <h1 class="cli-header-text">CLI</h1>
+  </div>
+  <div class="card-container">
+    <div class="cards">
+      <a href="https://github.com/Demonneno/morse">
+      <div class="card-description">
+        Morse Encoder and Decoder<br>
+        <div class="morse-card">Encode or decode morse with this simple app.
+        </div>
+      </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+<div class="ui-section" id="ui">
+  <div class="ui-header">
+    <h1 class="ui-header-text">UI</h1>
+  </div>
+  <div class="card-container">
+    <div class="cards">
+      <a href="https://github.com/Demonneno/krusty">
+      <div class="card-description">
+        Krusty's Cloudy Dream<br>
+        <div class="krusty-card">
+          Escape Homer's insatiable grumblings in this platformer!
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="body-fill"></div>
+{% endblock %}

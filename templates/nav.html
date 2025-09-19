@@ -1,0 +1,17 @@
+<nav class="navbar">
+	<link href='https://fonts.googleapis.com/css?family=Girassol' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Codystar' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+	<a href="{{ url_for('index') }}" class="navbar-brand">
+		<img src="{{ url_for('static', filename='img/logo3.svg') }}" alt="My Logo" class="logo-img"></a>
+	<div class="hamburger">☰</div>
+	<ul class="nav-links">
+		<li><a href="#cli" class="{% if request.endpoint == 'cli' %}active{% endif %}">CLI</a>
+		</li>
+		<li><a href="#ui" class="{% if request.endpoint == 'ui' %}active{% endif %}">UI</a></li>
+		<li><a href="#web" class="{% if request.endpoint == 'web' %}active{% endif %}">WEB</a></li>
+		<li><a href="#saas" class="{% if request.endpoint == 'saas' %}active{% endif %}">SAAS</a></li>
+		<li><a href="#tools" class="{% if request.endpoint == 'tools' %}active{% endif %}">TOOLS</a></li>
+		<li><a href="#contact" class="{% if request.endpoint == 'contact' %}active{% endif %}">CONTACT</a></li>
+	</ul>
+</nav>
