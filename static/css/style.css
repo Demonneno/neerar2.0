@@ -59,6 +59,8 @@ body {
   border-top: var(--dark-gray-border);
   text-align: center;
   font-family: var(--codystar);
+  position: sticky;
+  bottom: 0;
 }
 
 .navbar-brand, .body-photo, .cli-header, .ui-header, .card-container {
