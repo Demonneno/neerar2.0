@@ -57,6 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  
+  // Footer date
+  document.getElementById('footer_date').textContent = new Date().getFullYear();
 
   window.addEventListener('scroll', updateActiveLink);
   window.addEventListener('load', updateActiveLink); // Initial load

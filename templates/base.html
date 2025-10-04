@@ -12,7 +12,7 @@
 	<header>{% include "nav.html" %}</header>
 	{% block content %}{% endblock %}
 	<div class="footer">
-		<p>Neerar.com - ©2025</p>
+			<p>Neerar.com - ©<span id="footer_date"></span></p>
 	</div>
 	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
