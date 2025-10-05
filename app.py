@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Intro Page')
+    return render_template('index.html', title='Neerar.com')
 
 @app.route('/cli')
 def cli():
